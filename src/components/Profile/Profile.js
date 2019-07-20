@@ -7,7 +7,8 @@ class Profile extends React.Component {
     return (
       <div className="profile">
       <h1>My Profile</h1>
-      <Link className="btn btn-primary" to='/routine'>View routine</Link>
+      <Link className="btn btn-primary" to='/routine/'>View routine</Link>
+      <Link className="btn btn-primary" to='/stretches'>View Stretches</Link>
       </div>
     );
   }
