@@ -13,6 +13,7 @@ import fbConnection from '../helpers/data/connection';
 import Stretches from '../components/Stretches/Stretches';
 import Profile from '../components/Profile/Profile';
 import Single from '../components/Single/Single';
+import Routine from '../components/Routine/Routine';
 
 fbConnection();
 
@@ -67,7 +68,8 @@ class App extends React.Component {
 
               <PrivateRoute path='/stretches' component={Stretches} authed={authed}/>
               <PrivateRoute path='/profile' component={Profile} authed={authed}/>
-              <PrivateRoute path='/single' component={Single} authed={authed}/>
+              <PrivateRoute path='/single/:id' component={Single} authed={authed}/>
+              <PrivateRoute path='/routine/:id' component={Routine} authed={authed}/>
 
               <Redirect from='*' to='/auth' />
             </Switch>

@@ -1,20 +1,21 @@
 import React from 'react';
 import './Single.scss';
 import { Link } from 'react-router-dom';
-// import stretchData from '../../helpers/data/stretchData';
+import stretchData from '../../helpers/data/stretchData';
 
 
 class Single extends React.Component {
-  // state = {
-  //   stretch: {},
-  // }
+  state = {
+    stretch: {},
+  }
 
-  // componentDidMount() {
-  //   const stretchId = this.props.match.params.id;
-  //   stretchData.getSingle(stretchId)
-  //     .then(stretchPromise => this.setState({ stretch: stretchPromise.data }))
-  //     .catch(err => console.error('unable to get the stretch', err));
-  // }
+  componentDidMount() {
+    const stretchId = this.props.match.params.id;
+    console.error(stretchId);
+    stretchData.getSingleStretch(stretchId)
+      .then(stretchPromise => this.setState({ stretch: stretchPromise.data }))
+      .catch(err => console.error('unable to get the stretch', err));
+  }
 
   // addStretch = () => {
   //   const stretchId = this.props.match.params.id;
@@ -28,7 +29,9 @@ class Single extends React.Component {
     const { stretch } = this.state;
     return (
       <div className="Singlestretch">
-      <h1>Single</h1>
+      <h1>{stretch.name}</h1>
+      <h3>{stretch.difficulty}</h3>
+      <h1>`duration: {stretch.duration} minutes`</h1>
       {/* <button className="btn btn-danger" onClick={this.addStretch}>Add To Routine</button> */}
       <Link className="btn btn-primary" to='/stretches'>Back to Stretches</Link>
       </div>
