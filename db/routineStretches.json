@@ -1,0 +1,14 @@
+{
+    "routineStretch1": {
+      "routineId": "12345",
+      "stretchId": "stretch2"
+    },
+    "routineStretch2": {
+      "routineId": "12345",
+      "stretchId": "stretch1"
+    },
+    "routineStretch3": {
+      "routineId": "12345",
+      "stretchId": "stretch3"
+    }
+  }

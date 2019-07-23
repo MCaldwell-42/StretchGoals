@@ -1,0 +1,44 @@
+ {
+    "stretch1": {
+      "name": "Forward Bend",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart1",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/watch?v=hrp6Q_QyDkc"
+    },
+    "stretch2": {
+      "name": "Butterfly",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart21",
+      "duration": "1",
+      "videoUrl": "https://www.youtube.com/watch?v=rdxD3POKbV8"
+    },
+    "stretch3": {
+      "name": "Supine Twist",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart2",
+      "duration": "5",
+      "videoUrl": "https://www.youtube.com/watch?v=elI403TmzZY"
+    },
+    "stretch4": {
+      "name": "Child's pose",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart2",
+      "duration": "4",
+      "videoUrl": "https://www.youtube.com/watch?v=2vJKSlfLX10"
+    }, 
+    "stretch5": {
+      "name": "Neck Circles",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart3",
+      "duration": "4",
+      "videoUrl": "https://www.youtube.com/watch?v=e4QznHq8IAk"
+    }, 
+    "stretch6": {
+      "name": "Self Hug",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart4",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/watch?v=wT9Mnqbs1Dk"
+    }
+  }

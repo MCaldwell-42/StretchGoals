@@ -1,0 +1,65 @@
+{
+    "bodypart1": {
+      "name": "hamstrings"
+    },
+    "bodypart2": {
+      "name": "lower back"
+    },
+    "bodypart3": {
+      "name": "neck"
+    },
+    "bodypart4": {
+      "name": "upper back"
+    },
+    "bodypart5": {
+      "name": "shoulders"
+    },
+    "bodypart6": {
+      "name": "jaw"
+    },
+    "bodypart7": {
+      "name": "armpits"
+    },
+    "bodypart8": {
+      "name": "upper arms"
+    },
+    "bodypart9": {
+      "name": "forearms"
+    },
+    "bodypart10": {
+      "name": "wrists"
+    },
+    "bodypart11": {
+      "name": "hands"
+    },
+    "bodypart12": {
+      "name": "chest"
+    },
+    "bodypart13": {
+      "name": "stomach"
+    },
+    "bodypart14": {
+      "name": "torso"
+    },
+    "bodypart15": {
+      "name": "hips"
+    },
+    "bodypart16": {
+      "name": "glutes"
+    },
+    "bodypart17": {
+      "name": "knees"
+    },
+    "bodypart18": {
+      "name": "calves"
+    },
+    "bodypart19": {
+      "name": "ankles"
+    },
+    "bodypart20": {
+      "name": "feet"
+    },
+    "bodypart21": {
+      "name": "groin"
+    }
+  }
