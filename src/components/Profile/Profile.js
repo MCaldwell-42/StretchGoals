@@ -62,11 +62,18 @@ class Profile extends React.Component {
     this.getRoutines();
   }
 
+  deleteRoutine = (routineId) => {
+    routineData.deleteRoutine(routineId)
+      .then(() => this.getRoutines())
+      .catch(err => console.error('unable to delete', err));
+  }
+
   render() {
     const makeRoutineCards = this.state.routines.map(routine => (
       <RoutineCard
       key={routine.id}
       routine={routine}
+      deleteRoutine={this.deleteRoutine}
       />
     ));
     const { newRoutine } = this.state;
