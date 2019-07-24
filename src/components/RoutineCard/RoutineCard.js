@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import routineData from '../../helpers/data/routineData';
 import PropTypes from 'prop-types';
 import routineShape from '../../helpers/propz/stretchShape';
 import './RoutineCard.scss';
@@ -9,14 +8,14 @@ import './RoutineCard.scss';
 class RoutineCard extends React.Component {
   static propTypes = {
     routine: routineShape.routineShape,
-    // deleteRoutine: PropTypes.func.isRequired,
+    deleteRoutine: PropTypes.func.isRequired,
   }
 
-  // deleteMe = (e) => {
-  //   e.preventDefault();
-  //   const { routine, deleteRoutine } = this.props;
-  //   deleteRoutine(routine.id);
-  // }
+  deleteMe = (e) => {
+    e.preventDefault();
+    const { routine, deleteRoutine } = this.props;
+    deleteRoutine(routine.id);
+  }
 
   render() {
     const { routine } = this.props;
@@ -26,9 +25,9 @@ class RoutineCard extends React.Component {
       <div className="RoutineCard col-4">
         <div className="card" >
           <div className="card-body">
+          <button className="btn btn-danger" onClick={this.deleteMe}>x</button>
             <h2 className="card-title">{routine.name}</h2>
             <Link className="btn btn-success" to={routineLink}>View Routine</Link>
-            {/* <button className="btn btn-danger" onClick={this.deleteMe}>Remove from routine</button> */}
           </div>
         </div>
       </div>
