@@ -21,13 +21,12 @@ const getRoutines = uid => new Promise((resolve, reject) => {
 
 const deleteRoutine = routineId => axios.delete(`${firebaseUrl}/routines/${routineId}.json`);
 
-// const getSingleRoutine = routineId => axios.get(`${firebaseUrl}/routines/${routineId}.json`);
+const getSingleRoutine = routineId => axios.get(`${firebaseUrl}/routines/${routineId}.json`);
 
 const postRoutine = newRoutine => axios.post(`${firebaseUrl}/routines.json`, newRoutine);
 
-const putScat = (updatedScat, scatId) => axios.put(`${firebaseUrl}/scats/${scatId}.json`, updatedScat);
+const putRoutine = (updatedRoutine, routineId) => axios.put(`${firebaseUrl}/routines/${routineId}.json`, updatedRoutine);
 
 export default {
-  getRoutines, deleteRoutine, postRoutine, putScat,
+  getRoutines, deleteRoutine, postRoutine, putRoutine, getSingleRoutine,
 };
-// getSingleScat

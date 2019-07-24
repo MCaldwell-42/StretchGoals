@@ -11,7 +11,6 @@ class Single extends React.Component {
 
   componentDidMount() {
     const stretchId = this.props.match.params.id;
-    console.error(stretchId);
     stretchData.getSingleStretch(stretchId)
       .then(stretchPromise => this.setState({ stretch: stretchPromise.data }))
       .catch(err => console.error('unable to get the stretch', err));
