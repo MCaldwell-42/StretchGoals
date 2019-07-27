@@ -6,10 +6,12 @@ import { Link } from 'react-router-dom';
 import {
   Button, Modal, ModalHeader, ModalBody, ModalFooter,
 } from 'reactstrap';
+import PropTypes from 'prop-types';
 import routineData from '../../helpers/data/routineData';
-// import PropTypes from 'prop-types';
-// import stretchShape from '../../helpers/propz/stretchShape';
-// import routineStretchData from '../../helpers/data/routineStretchData';
+import stretchShape from '../../helpers/propz/stretchShape';
+import routineStretchData from '../../helpers/data/routineStretchData';
+import stretchData from '../../helpers/data/stretchData';
+import RoutineStretchCard from '../RoutineStretchCard/RoutineStretchCard';
 
 const defaultRoutine = {
   name: '',
@@ -21,7 +23,7 @@ class Routine extends React.Component {
     super(props);
     this.state = {
       modal: false,
-      // stretches: [],
+      stretches: [],
       routine: {},
       newRoutine: defaultRoutine,
     };
@@ -56,9 +58,9 @@ class Routine extends React.Component {
       .catch(err => console.error('unable to save', err));
   }
 
-  // static propTypes = {
-  //   stretch: stretchShape.stretchShape,
-  // }
+  static propTypes = {
+    stretch: stretchShape.stretchShape,
+  }
 
 
   getRoutine = () => {
@@ -68,25 +70,28 @@ class Routine extends React.Component {
       .catch(err => console.error('unable to get the routine', err));
   }
 
-  // getRoutineStretches = (routineId) => {
-  //   routineStretchData.getRoutine(routineId)
-  //     .then(stretches => this.setState({ stretches }))
-  //     .catch(err => console.error('unable to get the routine', err));
-  // }
+  getRoutineStretches = () => {
+    const routineId = this.props.match.params.id;
+    routineStretchData.getRoutineStretches(routineId)
+      .then(response => stretchData.routineStretches(response))
+      .then(stretches => this.setState({ stretches }))
+      .catch(err => console.error('unable to get the routine', err));
+  }
 
   componentDidMount() {
     this.getRoutine();
+    this.getRoutineStretches();
   }
 
   render() {
     const { routine } = this.state;
     const { newRoutine } = this.state;
-    // const makeStretchCards = this.state.stretches.map(stretches => (
-    //   <StretchCard
-    //   key={stretch.id}
-    //   stretch={stretch}
-    //   />
-    // ));
+    const makeStretchCards = this.state.stretches.map(stretch => (
+      <RoutineStretchCard
+      key={stretch.id}
+      stretch={stretch}
+      />
+    ));
 
     return (
       <div className="Routine">
@@ -110,9 +115,9 @@ class Routine extends React.Component {
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>
-       {/* <div className="d-flex">
+       <div className="d-flex">
        {makeStretchCards}
-       </div> */}
+       </div>
       <Link className="btn btn-primary" to='/profile'>Back to my profile</Link>
       </div>
     );

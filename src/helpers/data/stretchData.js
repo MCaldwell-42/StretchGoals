@@ -20,8 +20,30 @@ const getStretches = () => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
+const routineStretches = filteredStretches => new Promise((resolve, reject) => {
+  axios.get(`${firebaseUrl}/stretches.json`)
+    .then((results) => {
+      const stretchResults = results.data;
+      const filterResults = [];
+      const stretches = [];
+      if (stretchResults !== null) {
+        Object.keys(stretchResults).forEach((stretchId) => {
+          stretchResults[stretchId].id = stretchId;
+          stretches.push(stretchResults[stretchId]);
+        });
+        filteredStretches.forEach((fstretch) => {
+          const filteredStretch = stretches.filter(stretch => stretch.id === fstretch);
+          filterResults.push(filteredStretch[0]);
+        });
+      }
+      console.error(filterResults);
+      resolve(filterResults);
+    })
+    .catch(err => reject(err));
+});
+
 const getSingleStretch = stretchId => axios.get(`${firebaseUrl}/stretches/${stretchId}.json`);
 
 export default {
-  getStretches, getSingleStretch,
+  getStretches, getSingleStretch, routineStretches,
 };
