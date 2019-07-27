@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,
+  ButtonDropdown, DropdownToggle, DropdownMenu,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import RoutineOption from '../RoutineOption/RoutineOption';

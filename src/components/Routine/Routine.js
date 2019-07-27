@@ -11,7 +11,7 @@ import routineData from '../../helpers/data/routineData';
 import stretchShape from '../../helpers/propz/stretchShape';
 import routineStretchData from '../../helpers/data/routineStretchData';
 import stretchData from '../../helpers/data/stretchData';
-import StretchCard from '../StretchCard/StretchCard';
+import RoutineStretchCard from '../RoutineStretchCard/RoutineStretchCard';
 
 const defaultRoutine = {
   name: '',
@@ -87,7 +87,7 @@ class Routine extends React.Component {
     const { routine } = this.state;
     const { newRoutine } = this.state;
     const makeStretchCards = this.state.stretches.map(stretch => (
-      <StretchCard
+      <RoutineStretchCard
       key={stretch.id}
       stretch={stretch}
       />
