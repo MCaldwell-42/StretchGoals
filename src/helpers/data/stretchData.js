@@ -32,8 +32,13 @@ const routineStretches = filteredStretches => new Promise((resolve, reject) => {
           stretches.push(stretchResults[stretchId]);
         });
         filteredStretches.forEach((fstretch) => {
-          const filteredStretch = stretches.filter(stretch => stretch.id === fstretch);
-          filterResults.push(filteredStretch[0]);
+          let filteredStretch = stretches.filter(stretch => stretch.id === fstretch.stretchId);
+          [filteredStretch] = filteredStretch;
+          const smashed = {
+            ...filteredStretch,
+            ...fstretch,
+          };
+          filterResults.push(smashed);
         });
       }
       console.error(filterResults);

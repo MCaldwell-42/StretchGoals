@@ -29,21 +29,12 @@ class Stretches extends React.Component {
       this.getStretches();
     }
 
-    // addStretch = () => {
-    //   const stretchId = this.props.match.params.id;
-    //   const routineId = id attached to dropdown button;
-    //   stretchData.addStretch(stretchId, RoutineId)
-    //     .then(() => this.props.history.push('/stretches'))
-    //     .catch(err => console.error('unable to add stretch', err));
-    // }
-
     render() {
       const makeStretchCards = this.state.stretches.map(stretch => (
       <StretchCard
       key={stretch.id}
       stretch={stretch}
       routines={this.state.routines}
-      // addStretch ={this.addStretch}
       />
       ));
 

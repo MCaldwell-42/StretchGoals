@@ -90,6 +90,7 @@ class Routine extends React.Component {
       <RoutineStretchCard
       key={stretch.id}
       stretch={stretch}
+      routineId = {this.props.match.params.id}
       />
     ));
 
