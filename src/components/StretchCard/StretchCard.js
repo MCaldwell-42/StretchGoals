@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import stretchData from '../../helpers/data/stretchData';
+import {
+  ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,
+} from 'reactstrap';
 import PropTypes from 'prop-types';
+import RoutineOption from '../RoutineOption/RoutineOption';
+import routineStretchData from '../../helpers/data/routineStretchData';
 import stretchShape from '../../helpers/propz/stretchShape';
 import './StretchCard.scss';
 
@@ -12,14 +16,40 @@ class StretchCard extends React.Component {
     addStretch: PropTypes.func.isRequired,
   }
 
-  // addMe = (e) => {
-  //   e.preventDefault();
-  //   const { stretch, addStretch } = this.props;
-  //   addStretch(stretch.id, routine.id);
-  // }
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      dropdownOpen: false,
+      routines: this.props,
+    };
+  }
+
+  toggle() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen,
+    });
+  }
+
+  addMe = (routineId) => {
+    const { stretch } = this.props;
+    const newRoutineStretch = {
+      stretchId: stretch.id,
+      routineId,
+    };
+    routineStretchData.addRoutineStretch(newRoutineStretch)
+      .then(() => this.toggle())
+      .catch(err => console.error('couldnt add stretch', err));
+  }
 
   render() {
-    const { stretch } = this.props;
+    const { stretch, routines } = this.props;
+
+    const routineChoices = routines.map(routine => (
+      <RoutineOption key={routine.id} routineOption={routine} addMe={this.addMe}/>
+    ));
+
     const singleLink = `/single/${stretch.id}`;
 
     return (
@@ -29,7 +59,14 @@ class StretchCard extends React.Component {
             <h5 className="card-title">{stretch.name}</h5>
             <h6 className="difficulty">{stretch.difficulty}</h6>
             <Link className="btn btn-success" to={singleLink}>View</Link>
-            {/* <button className="btn btn-danger" onClick={this.addMe}>Add to Routine</button> */}
+            <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+        <DropdownToggle caret>
+          Add To Routine
+        </DropdownToggle>
+        <DropdownMenu>
+          {routineChoices}
+        </DropdownMenu>
+      </ButtonDropdown>
           </div>
         </div>
       </div>

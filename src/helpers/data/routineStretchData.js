@@ -19,4 +19,6 @@ const getRoutineStretches = routineId => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
-export default { getRoutineStretches };
+const addRoutineStretch = newStretch => axios.post(`${firebaseUrl}/routineStretches.json`, newStretch);
+
+export default { getRoutineStretches, addRoutineStretch };
