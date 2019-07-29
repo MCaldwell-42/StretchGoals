@@ -78,6 +78,12 @@ class Routine extends React.Component {
       .catch(err => console.error('unable to get the routine', err));
   }
 
+  deleteRoutineStretch = (routineStretchId) => {
+    routineStretchData.deleteRoutineStretch(routineStretchId)
+      .then(() => this.getRoutineStretches())
+      .catch(err => console.error('unable to delete', err));
+  }
+
   componentDidMount() {
     this.getRoutine();
     this.getRoutineStretches();
@@ -91,6 +97,7 @@ class Routine extends React.Component {
       key={stretch.id}
       stretch={stretch}
       routineId = {this.props.match.params.id}
+      deleteRoutineStretch={this.deleteRoutineStretch}
       />
     ));
 
