@@ -10,7 +10,8 @@ const getRoutineStretches = routineId => new Promise((resolve, reject) => {
       const routineStretches = [];
       if (routineStretchResults !== null) {
         Object.keys(routineStretchResults).forEach((routineStretchId) => {
-          routineStretches.push(routineStretchResults[routineStretchId].stretchId);
+          routineStretchResults[routineStretchId].id = routineStretchId;
+          routineStretches.push(routineStretchResults[routineStretchId]);
         });
       }
       console.error(routineStretches);
@@ -19,6 +20,8 @@ const getRoutineStretches = routineId => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
+const deleteRoutineStretch = routineStretchId => axios.delete(`${firebaseUrl}/routineStretches/${routineStretchId}.json`);
+
 const addRoutineStretch = newStretch => axios.post(`${firebaseUrl}/routineStretches.json`, newStretch);
 
-export default { getRoutineStretches, addRoutineStretch };
+export default { getRoutineStretches, addRoutineStretch, deleteRoutineStretch };
