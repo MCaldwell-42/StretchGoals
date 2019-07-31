@@ -39,7 +39,7 @@ class StretchCard extends React.Component {
       routineId,
     };
     routineStretchData.addRoutineStretch(newRoutineStretch)
-      .then(() => this.toggle())
+      .then(() => this.state.dropdownOpen)
       .catch(err => console.error('couldnt add stretch', err));
   }
 
