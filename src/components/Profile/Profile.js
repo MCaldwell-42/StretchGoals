@@ -80,7 +80,7 @@ class Profile extends React.Component {
     return (
       <div className="profile col">
       <h1>My Profile</h1>
-      <Link className="btn btn-primary" to='/stretches'>View Stretches</Link>
+      <Link className="btn btn-primary" to='/stretches'>View All Stretches</Link>
       <Button color="danger" onClick={this.toggle}>New Routine</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className="routineModal">
           <ModalHeader toggle={this.toggle}>New Routine</ModalHeader>

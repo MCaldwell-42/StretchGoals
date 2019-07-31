@@ -17,7 +17,7 @@ class RoutineStretchCard extends React.Component {
 
   render() {
     const { stretch } = this.props;
-    const singleLink = `/single/${stretch.id}`;
+    const singleLink = `/single/${stretch.stretchId}`;
 
     return (
       <div className="RoutineStretchCard col-4">
