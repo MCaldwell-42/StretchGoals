@@ -127,6 +127,7 @@ class Routine extends React.Component {
        {makeStretchCards}
        </div>
       <Link className="btn btn-primary" to='/profile'>Back to my profile</Link>
+      <Link className="btn btn-success" to='/stretches'>Add Stretches</Link>
       </div>
     );
   }
