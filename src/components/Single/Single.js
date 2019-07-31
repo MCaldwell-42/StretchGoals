@@ -29,8 +29,9 @@ class Single extends React.Component {
     return (
       <div className="Singlestretch">
       <h1>{stretch.name}</h1>
-      <h3>{stretch.difficulty}</h3>
-      <h1>`duration: {stretch.duration} minutes`</h1>
+      <h2>{stretch.difficulty}</h2>
+      <h2>duration: {stretch.duration} minutes</h2>
+      <h2><a href={stretch.videoUrl}>tutorial video</a></h2>
       {/* <button className="btn btn-danger" onClick={this.addStretch}>Add To Routine</button> */}
       <Link className="btn btn-primary" to='/stretches'>Back to Stretches</Link>
       </div>
