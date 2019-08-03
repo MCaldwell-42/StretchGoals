@@ -24,9 +24,19 @@ class Stretches extends React.Component {
         .catch(err => console.error('could not get routines', err));
     }
 
+    getStretchesByBodyPartId = (bodypartId) => {
+      stretchData.getStretchesByBodyPart(bodypartId).then(stretches => this.setState({ stretches }))
+        .catch(err => console.error('could not get stretches by bodypart', err));
+    }
+
     componentDidMount() {
+      const bodypartId = this.props.location.search.split('=')[1];
+      if (bodypartId) {
+        this.getStretchesByBodyPartId(bodypartId);
+      } else {
+        this.getStretches();
+      }
       this.getRoutines();
-      this.getStretches();
     }
 
     render() {
@@ -41,6 +51,7 @@ class Stretches extends React.Component {
       return (
       <div className="Stretches col">
       <h1>Stretches</h1>
+      {this.props.location.search.length ? (<button className="btn btn-primary" onClick={() => { this.props.history.push('/stretches'); this.getStretches(); }}>View All Stretches</button>) : ''}
       <div className="d-flex">
        {makeStretchCards}
        </div>

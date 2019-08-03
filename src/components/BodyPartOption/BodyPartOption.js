@@ -6,7 +6,7 @@ import {
 class BodyPartOption extends React.Component {
   clickEvent = (e) => {
     e.preventDefault();
-    this.props.getStretchesByBodyPart(this.props.bodyPartOption.id);
+    this.props.filterStretches(this.props.bodyPartOption.id);
   }
 
   render() {
