@@ -100,7 +100,7 @@ class Profile extends React.Component {
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>
-      <div className="routCards">
+      <div className="routCards d-flex flex-wrap">
       {makeRoutineCards}
       </div>
       </div>

@@ -52,7 +52,7 @@ class Stretches extends React.Component {
       <div className="Stretches col">
       <h1>Stretches</h1>
       {this.props.location.search.length ? (<button className="btn btn-primary" onClick={() => { this.props.history.push('/stretches'); this.getStretches(); }}>View All Stretches</button>) : ''}
-      <div className="d-flex">
+      <div className="d-flex flex-wrap">
        {makeStretchCards}
        </div>
       </div>
