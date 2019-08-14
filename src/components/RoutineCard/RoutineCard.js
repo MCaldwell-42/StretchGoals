@@ -22,7 +22,7 @@ class RoutineCard extends React.Component {
     const routineLink = `/routine/${routine.id}`;
 
     return (
-      <div className="RoutineCard col-4">
+      <div className="RoutineCard col-12">
         <div className="card" >
           <div className="card-body">
           <button className="btn btn-danger" onClick={this.deleteMe}>x</button>

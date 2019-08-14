@@ -3,5 +3,13 @@ body {
 }
 
 a {
-  color: rebeccapurple;
+  color: lightgreen;
+}
+
+a:hover {
+  color: darkred;
+}
+
+.row {
+  justify-content: center;
 }

@@ -123,11 +123,13 @@ class Routine extends React.Component {
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>
-       <div className="d-flex">
+       <div className="d-flex flex-wrap">
        {makeStretchCards}
        </div>
+       <div className="routineLinks">
       <Link className="btn btn-primary" to='/profile'>Back to my profile</Link>
       <Link className="btn btn-success" to='/stretches'>Add Stretches</Link>
+      </div>
       </div>
     );
   }

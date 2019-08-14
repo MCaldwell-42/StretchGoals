@@ -16,23 +16,15 @@ class Single extends React.Component {
       .catch(err => console.error('unable to get the stretch', err));
   }
 
-  // addStretch = () => {
-  //   const stretchId = this.props.match.params.id;
-  //   const routineId = id attached to dropdown button;
-  //   stretchData.addStretch(stretchId, RoutineId)
-  //     .then(() => this.props.history.push('/stretches'))
-  //     .catch(err => console.error('unable to add stretch', err));
-  // }
 
   render() {
     const { stretch } = this.state;
     return (
       <div className="Singlestretch">
       <h1>{stretch.name}</h1>
-      <h2>{stretch.difficulty}</h2>
+      <h2>difficulty: {stretch.difficulty}</h2>
       <h2>duration: {stretch.duration} minutes</h2>
-      <h2><a href={stretch.videoUrl}>tutorial video</a></h2>
-      {/* <button className="btn btn-danger" onClick={this.addStretch}>Add To Routine</button> */}
+      <h1><a href={stretch.videoUrl}>tutorial video</a></h1>
       <Link className="btn btn-primary" to='/stretches'>Back to Stretches</Link>
       </div>
     );

@@ -1,3 +1,28 @@
+
 body {
   display: block;
+  background-color: black;
+  color: white;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbMPvbu7B-JVv6u0cpy6ZfqVu94CcglCv6BuytUgkR3LJeFAg3");
+  background-size: 100%;
+}
+
+.profile {
+  background-image: url("https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?cs=srgb&dl=backgrounds-blank-blue-953214.jpg&fm=jpg");
+  // background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/sacred-geometry-141-endre-balogh.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
+.RoutineCard {
+margin-top: 20px;
+padding-right: 350px;
+padding-left: 350px;
+} 
+
+.card {
+  background-color: darkcyan;
+  border: 3px solid black;
+  box-shadow: 3px 3px black;
 }
