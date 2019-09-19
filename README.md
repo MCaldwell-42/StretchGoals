@@ -4,7 +4,7 @@ A library of stretches that allow users to filter based on need and build their 
 [Demo](https://stretch-goals.firebaseapp.com/)
 
 ## Screenshots
-![image of Star Wars Squad Builder Site](https://raw.githubusercontent.com/MCaldwell-42/Personal-Bio-Site/master/StetchGoalsScreen.png)
+![image of stretch goals website](https://raw.githubusercontent.com/MCaldwell-42/Personal-Bio-Site/master/StetchGoalsScreen.png)
 
 ## Installation Instructions
 - Clone down this repo
