@@ -13,3 +13,22 @@ a:hover {
 .row {
   justify-content: center;
 }
+
+#singleStretchHead {
+    background-color: darkcyan;
+    color: white;
+    border: black 4px solid;
+    margin-top: 20px;
+}
+
+iframe {
+    border: black 4px solid;
+    border-bottom: black 5px solid;
+    align-self: auto;
+}
+
+.returnBtn {
+    align-items: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

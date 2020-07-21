@@ -4,195 +4,195 @@
       "difficulty": "easy",
       "bodyPartId": "bodypart1",
       "duration": "3",
-      "videoUrl": "https://www.youtube.com/watch?v=hrp6Q_QyDkc"
+      "videoUrl": "https://www.youtube.com/embed/hrp6Q_QyDkc"
     },
     "stretch2": {
       "name": "Butterfly",
       "difficulty": "easy",
       "bodyPartId": "bodypart21",
       "duration": "1",
-      "videoUrl": "https://www.youtube.com/watch?v=rdxD3POKbV8"
+      "videoUrl": "https://www.youtube.com/embed/rdxD3POKbV8"
     },
     "stretch3": {
       "name": "Supine Twist",
       "difficulty": "easy",
       "bodyPartId": "bodypart2",
       "duration": "5",
-      "videoUrl": "https://www.youtube.com/watch?v=elI403TmzZY"
+      "videoUrl": "https://www.youtube.com/embed/eSOoB4Dj5_8"
     },
     "stretch4": {
       "name": "Child's pose",
       "difficulty": "easy",
       "bodyPartId": "bodypart2",
       "duration": "4",
-      "videoUrl": "https://www.youtube.com/watch?v=2vJKSlfLX10"
+      "videoUrl": "https://www.youtube.com/embed/2vJKSlfLX10"
     }, 
     "stretch5": {
       "name": "Neck Circles",
       "difficulty": "easy",
       "bodyPartId": "bodypart3",
       "duration": "4",
-      "videoUrl": "https://www.youtube.com/watch?v=e4QznHq8IAk"
+      "videoUrl": "https://www.youtube.com/embed/e4QznHq8IAk"
     }, 
     "stretch6": {
       "name": "Self Hug",
       "difficulty": "easy",
       "bodyPartId": "bodypart4",
       "duration": "3",
-      "videoUrl": "https://www.youtube.com/watch?v=wT9Mnqbs1Dk"
+      "videoUrl": "https://www.youtube.com/embed/wT9Mnqbs1Dk"
     },
     "stretch7": {
       "name": "Cobra",
       "difficulty": "medium",
       "bodyPartId": "bodypart2",
       "duration": "1",
-      "videoUrl": "https://www.youtube.com/watch?v=JDcdhTuycOI"
+      "videoUrl": "https://www.youtube.com/embed/JDcdhTuycOI"
     },
     "stretch8": {
       "name": "Tennis Balls (upper back)",
       "difficulty": "easy",
       "bodyPartId": "bodypart4",
-      "duration": "10",
-      "videoUrl": "https://www.youtube.com/watch?v=66JVpyga7D4"
+      "duration": "7",
+      "videoUrl": "https://www.youtube.com/embed/66JVpyga7D4"
     },
     "stretch9": {
       "name": "Shrugs",
       "difficulty": "easy",
       "bodyPartId": "bodypart5",
       "duration": "5",
-      "videoUrl": "https://www.youtube.com/watch?v=PuHoEYF9-68"
+      "videoUrl": "https://www.youtube.com/embed/PuHoEYF9-68"
     },
     "stretch10": {
       "name": "Arm Pull Shoulder Stretch",
       "difficulty": "easy",
       "bodyPartId": "bodypart5",
       "duration": "3",
-      "videoUrl": "https://www.youtube.com/watch?v=GIureJZfHUQ"
+      "videoUrl": "https://www.youtube.com/embed/GIureJZfHUQ"
     },
     "stretch11": {
       "name": "Lion's Breath",
       "difficulty": "easy",
       "bodyPartId": "bodypart6",
       "duration": "5",
-      "videoUrl": "https://www.youtube.com/watch?v=bq2EPNM8wjw"
+      "videoUrl": "https://www.youtube.com/embed/bq2EPNM8wjw"
     },
     "stretch12": {
       "name": "Overhead Stretch",
       "difficulty": "easy",
       "bodyPartId": "bodypart7",
       "duration": "2",
-      "videoUrl": "https://www.youtube.com/watch?v=QYezrlpg3L8"
+      "videoUrl": "https://www.youtube.com/embed/QYezrlpg3L8"
     },
     "stretch13": {
       "name": "Overhead Tricep Stretch",
       "difficulty": "medium",
       "bodyPartId": "bodypart8",
       "duration": "3",
-      "videoUrl": "https://www.youtube.com/watch?v=nbHOmIYMazk"
+      "videoUrl": "https://www.youtube.com/embed/nbHOmIYMazk"
     },
     "stretch14": {
       "name": "Wrist Extensions",
       "difficulty": "easy",
       "bodyPartId": "bodypart9",
       "duration": "5",
-      "videoUrl": "https://www.youtube.com/watch?v=cDuHdy1zIO0"
+      "videoUrl": "https://www.youtube.com/embed/cDuHdy1zIO0"
     },
     "stretch15": {
       "name": "Wrist Circles",
       "difficulty": "easy",
       "bodyPartId": "bodypart10",
       "duration": "2",
-      "videoUrl": "https://www.youtube.com/watch?v=xw_MesrlTiM"
+      "videoUrl": "https://www.youtube.com/embed/xw_MesrlTiM"
     },
     "stretch16": {
       "name": "Wrist Stretches",
       "difficulty": "easy",
       "bodyPartId": "bodypart10",
       "duration": "6",
-      "videoUrl": "https://www.youtube.com/watch?v=uO0ZbU2pmP8"
+      "videoUrl": "https://www.youtube.com/embed/NxC4LhOrMFw"
     },
     "stretch17": {
       "name": "Finger Stretches",
       "difficulty": "easy",
       "bodyPartId": "bodypart11",
       "duration": "2",
-      "videoUrl": "https://www.youtube.com/watch?v=11bX6_dM6UQ"
+      "videoUrl": "https://www.youtube.com/embed/uPO-zST-7EE"
     },
     "stretch18": {
       "name": "Wide Arm Stretch",
       "difficulty": "easy",
       "bodyPartId": "bodypart12",
       "duration": "3",
-      "videoUrl": "https://www.youtube.com/watch?v=dtWsGcldBLM"
+      "videoUrl": "https://www.youtube.com/embed/dtWsGcldBLM"
     },
     "stretch19": {
       "name": "Seated Spinal Twist",
       "difficulty": "medium",
       "bodyPartId": "bodypart14",
       "duration": "7",
-      "videoUrl": "https://www.youtube.com/watch?v=ciGK6HyYqV4"
+      "videoUrl": "https://www.youtube.com/embed/ciGK6HyYqV4"
     },
     "stretch20": {
       "name": "Knee Stretching Exercises",
       "difficulty": "easy",
       "bodyPartId": "bodypart17",
       "duration": "4",
-      "videoUrl": "https://www.youtube.com/watch?v=VHyR-hZTaYg"
+      "videoUrl": "https://www.youtube.com/embed/VHyR-hZTaYg"
     },
     "stretch21": {
       "name": "Double Knee Hug",
       "difficulty": "medium",
       "bodyPartId": "bodypart15",
       "duration": "3",
-      "videoUrl": "https://www.youtube.com/watch?v=gc7cs3SmpUk"
+      "videoUrl": "https://www.youtube.com/embed/AK6N2cqtffc"
     },
     "stretch22": {
       "name": "Happy Baby",
       "difficulty": "medium",
       "bodyPartId": "bodypart15",
       "duration": "3",
-      "videoUrl": "https://www.youtube.com/watch?v=hTeoG3H0vsM"
+      "videoUrl": "https://www.youtube.com/embed/Ppku7i3ypGM"
     },
     "stretch23": {
       "name": "Single Knee Hug",
       "difficulty": "easy",
       "bodyPartId": "bodypart16",
       "duration": "5",
-      "videoUrl": "https://www.youtube.com/watch?v=rAkFw5a9plk"
+      "videoUrl": "https://www.youtube.com/embed/rAkFw5a9plk"
     },
     "stretch24": {
       "name": "Calves Stretch",
       "difficulty": "easy",
       "bodyPartId": "bodypart18",
       "duration": "6",
-      "videoUrl": "https://www.youtube.com/watch?v=FtbKGWfQVCk"
+      "videoUrl": "https://www.youtube.com/embed/FtbKGWfQVCk"
     },
     "stretch25": {
       "name": "Ankle Circles",
       "difficulty": "easy",
       "bodyPartId": "bodypart19",
       "duration": "2",
-      "videoUrl": "https://www.youtube.com/watch?v=jsy41du9I5g"
+      "videoUrl": "https://www.youtube.com/embed/jsy41du9I5g"
     },
     "stretch26": {
       "name": "Tennis Balls (feet)",
       "difficulty": "easy",
       "bodyPartId": "bodypart20",
       "duration": "5",
-      "videoUrl": "https://www.youtube.com/watch?v=qP8mnS4ezdU"
+      "videoUrl": "https://www.youtube.com/embed/qP8mnS4ezdU"
     },
     "stretch27": {
       "name": "Open Leg Forward Lean",
       "difficulty": "hard",
       "bodyPartId": "bodypart21",
       "duration": "7",
-      "videoUrl": "https://www.youtube.com/watch?v=GiYjGxHJbY8"
+      "videoUrl": "https://www.youtube.com/embed/GiYjGxHJbY8"
     },
     "stretch28": {
       "name": "Frog Stretch",
       "difficulty": "medium",
       "bodyPartId": "bodypart21",
       "duration": "3",
-      "videoUrl": "https://www.youtube.com/watch?v=xOu7yImodGg"
+      "videoUrl": "https://www.youtube.com/embed/xOu7yImodGg"
     }
     }

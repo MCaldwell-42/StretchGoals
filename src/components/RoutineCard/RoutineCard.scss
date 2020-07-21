@@ -1,3 +1,14 @@
 body {
   display: block;
 }
+
+.routineDeleteButton {
+    float: right;
+    max-width: 50px;
+    border-radius: 0px;
+    border-bottom-right-radius: 3px;
+}
+
+.inRoutCard {
+    min-width: 250px;
+}

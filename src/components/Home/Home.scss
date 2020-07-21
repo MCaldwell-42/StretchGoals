@@ -1,3 +1,16 @@
+@import '../../styles/_variables.scss';
 body {
   display: block;
+}
+
+#homeHeader {
+    background-color: $background-color2;
+    color: whitesmoke;
+    border: black 4px solid;
+    margin-bottom: 5px;
+}
+
+.btn-secondary.dropdown-toggle {
+    background-color: skyblue;
+    color: black;
 }

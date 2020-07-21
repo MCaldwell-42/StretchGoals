@@ -32,7 +32,7 @@ class Routine extends React.Component {
   }
 
   toggle() {
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       modal: !prevState.modal,
     }));
   }
@@ -43,7 +43,7 @@ class Routine extends React.Component {
     this.setState({ newRoutine: tempRoutine });
   }
 
-  nameChange = e => this.formFieldStringState('name', e);
+  nameChange = (e) => this.formFieldStringState('name', e);
 
   formSubmit = (e) => {
     e.preventDefault();
@@ -55,33 +55,32 @@ class Routine extends React.Component {
         this.toggle();
         this.getRoutine();
       })
-      .catch(err => console.error('unable to save', err));
+      .catch((err) => console.error('unable to save', err));
   }
 
   static propTypes = {
     stretch: stretchShape.stretchShape,
   }
 
-
   getRoutine = () => {
     const routineId = this.props.match.params.id;
     routineData.getSingleRoutine(routineId)
-      .then(routinePromise => this.setState({ routine: routinePromise.data }))
-      .catch(err => console.error('unable to get the routine', err));
+      .then((routinePromise) => this.setState({ routine: routinePromise.data }))
+      .catch((err) => console.error('unable to get the routine', err));
   }
 
   getRoutineStretches = () => {
     const routineId = this.props.match.params.id;
     routineStretchData.getRoutineStretches(routineId)
-      .then(response => stretchData.routineStretches(response))
-      .then(stretches => this.setState({ stretches }))
-      .catch(err => console.error('unable to get the routine', err));
+      .then((response) => stretchData.routineStretches(response))
+      .then((stretches) => this.setState({ stretches }))
+      .catch((err) => console.error('unable to get the routine', err));
   }
 
   deleteRoutineStretch = (routineStretchId) => {
     routineStretchData.deleteRoutineStretch(routineStretchId)
       .then(() => this.getRoutineStretches())
-      .catch(err => console.error('unable to delete', err));
+      .catch((err) => console.error('unable to delete', err));
   }
 
   componentDidMount() {
@@ -92,7 +91,7 @@ class Routine extends React.Component {
   render() {
     const { routine } = this.state;
     const { newRoutine } = this.state;
-    const makeStretchCards = this.state.stretches.map(stretch => (
+    const makeStretchCards = this.state.stretches.map((stretch) => (
       <RoutineStretchCard
       key={stretch.id}
       stretch={stretch}
@@ -103,7 +102,7 @@ class Routine extends React.Component {
 
     return (
       <div className="Routine">
-      <h1>{routine.name}</h1>
+      <h1 id="routineHeader">{routine.name}</h1>
       <Button color="danger" onClick={this.toggle}>Edit Name</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className="routineModal">
           <ModalHeader toggle={this.toggle}>Edit Name</ModalHeader>

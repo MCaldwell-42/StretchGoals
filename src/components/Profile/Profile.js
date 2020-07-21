@@ -27,7 +27,7 @@ class Profile extends React.Component {
   }
 
   toggle() {
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       modal: !prevState.modal,
     }));
   }
@@ -38,7 +38,7 @@ class Profile extends React.Component {
     this.setState({ newRoutine: tempRoutine });
   }
 
-  nameChange = e => this.formFieldStringState('name', e);
+  nameChange = (e) => this.formFieldStringState('name', e);
 
   formSubmit = (e) => {
     e.preventDefault();
@@ -49,13 +49,13 @@ class Profile extends React.Component {
         this.toggle();
         this.getRoutines();
       })
-      .catch(err => console.error('unable to save', err));
+      .catch((err) => console.error('unable to save', err));
   }
 
   getRoutines = () => {
     const { uid } = firebase.auth().currentUser;
-    routineData.getRoutines(uid).then(routines => this.setState({ routines }))
-      .catch(err => console.error('could not get routines', err));
+    routineData.getRoutines(uid).then((routines) => this.setState({ routines }))
+      .catch((err) => console.error('could not get routines', err));
   }
 
   componentDidMount() {
@@ -65,11 +65,11 @@ class Profile extends React.Component {
   deleteRoutine = (routineId) => {
     routineData.deleteRoutine(routineId)
       .then(() => this.getRoutines())
-      .catch(err => console.error('unable to delete', err));
+      .catch((err) => console.error('unable to delete', err));
   }
 
   render() {
-    const makeRoutineCards = this.state.routines.map(routine => (
+    const makeRoutineCards = this.state.routines.map((routine) => (
       <RoutineCard
       key={routine.id}
       routine={routine}
@@ -79,7 +79,7 @@ class Profile extends React.Component {
     const { newRoutine } = this.state;
     return (
       <div className="profile col">
-      <h1>My Profile</h1>
+      <h1 id="profileHeader">My Profile</h1>
       <Link className="btn btn-primary" to='/stretches'>View All Stretches</Link>
       <Button color="danger" onClick={this.toggle}>New Routine</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className="routineModal">
