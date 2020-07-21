@@ -19,12 +19,14 @@ class Single extends React.Component {
     const { stretch } = this.state;
     return (
       <div className="Singlestretch">
+      <div id="singleStretchHead">
       <h1>{stretch.name}</h1>
       <h2>difficulty: {stretch.difficulty}</h2>
       <h2>recommended duration: {stretch.duration} minutes</h2>
+      <Link className="btn btn-primary returnBtn" to='/stretches'>Back to Stretches</Link>
+      </div>
       <iframe width="560" height="315" src={stretch.videoUrl} title={stretch.name} frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <Link className="btn btn-primary" to='/stretches'>Back to Stretches</Link>
       </div>
     );
   }
