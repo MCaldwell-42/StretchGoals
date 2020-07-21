@@ -50,7 +50,7 @@ class Stretches extends React.Component {
       return (
       <div className="Stretches col">
       <h1 id="stretchesHeader">Stretches</h1>
-      <h5 id="disclaimer">Note: Many stretches target multiple parts of the body. Expirement around!</h5>
+      <h5 id="disclaimer">Note: Many stretches target multiple parts of the body. Experiment around!</h5>
       {this.props.location.search.length ? (<button className="btn btn-primary" onClick={() => { this.props.history.push('/stretches'); this.getStretches(); }}>View All Stretches</button>) : ''}
       <div className="d-flex flex-wrap">
        {makeStretchCards}
