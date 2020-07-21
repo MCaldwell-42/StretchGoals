@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   ButtonDropdown, DropdownToggle, DropdownMenu,
 } from 'reactstrap';
@@ -52,6 +53,7 @@ class Home extends React.Component {
         {bodyPartChoices}
         </DropdownMenu>
       </ButtonDropdown>
+      <Link className="btn btn-primary" to='/stretches'>View All Stretches</Link>
       </div>
     );
   }
