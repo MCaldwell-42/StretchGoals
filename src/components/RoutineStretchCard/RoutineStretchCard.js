@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './RoutineStretchCard.scss';
 
-
 class RoutineStretchCard extends React.Component {
   static propTypes = {
     deleteRoutineStretch: PropTypes.func.isRequired,

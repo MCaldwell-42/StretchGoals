@@ -7,7 +7,6 @@ import bodyPartData from '../../helpers/data/bodyPartData';
 import 'firebase/auth';
 import './Home.scss';
 
-
 class Home extends React.Component {
   state = {
     bodyparts: [],
@@ -15,8 +14,8 @@ class Home extends React.Component {
   }
 
   getBodyParts = () => {
-    bodyPartData.getBodyParts().then(bodyparts => this.setState({ bodyparts }))
-      .catch(err => console.error('could not get bodyparts', err));
+    bodyPartData.getBodyParts().then((bodyparts) => this.setState({ bodyparts }))
+      .catch((err) => console.error('could not get bodyparts', err));
   }
 
   componentDidMount() {
@@ -36,12 +35,15 @@ class Home extends React.Component {
   }
 
   render() {
-    const bodyPartChoices = this.state.bodyparts.map(bodypart => (
+    const bodyPartChoices = this.state.bodyparts.map((bodypart) => (
      <BodyPartOption key={bodypart.id} bodyPartOption={bodypart} filterStretches={this.filterStretches}/>
     ));
     return (
       <div className="Home col">
-      <h1>Where are you sore?</h1>
+      <div id="homeHeader">
+      <h1>Welcome to Stretch Goals!</h1>
+      <h2>Where are you sore?</h2>
+      </div>
       <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle caret>
           Choose Body Part

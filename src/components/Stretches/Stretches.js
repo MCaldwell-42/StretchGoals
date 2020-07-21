@@ -6,7 +6,6 @@ import routineData from '../../helpers/data/routineData';
 import StretchCard from '../StretchCard/StretchCard';
 import './Stretches.scss';
 
-
 class Stretches extends React.Component {
   state = {
     stretches: [],
@@ -14,19 +13,19 @@ class Stretches extends React.Component {
   }
 
     getStretches = () => {
-      stretchData.getStretches().then(stretches => this.setState({ stretches }))
-        .catch(err => console.error('could not get stretches', err));
+      stretchData.getStretches().then((stretches) => this.setState({ stretches }))
+        .catch((err) => console.error('could not get stretches', err));
     }
 
     getRoutines = () => {
       const { uid } = firebase.auth().currentUser;
-      routineData.getRoutines(uid).then(routines => this.setState({ routines }))
-        .catch(err => console.error('could not get routines', err));
+      routineData.getRoutines(uid).then((routines) => this.setState({ routines }))
+        .catch((err) => console.error('could not get routines', err));
     }
 
     getStretchesByBodyPartId = (bodypartId) => {
-      stretchData.getStretchesByBodyPart(bodypartId).then(stretches => this.setState({ stretches }))
-        .catch(err => console.error('could not get stretches by bodypart', err));
+      stretchData.getStretchesByBodyPart(bodypartId).then((stretches) => this.setState({ stretches }))
+        .catch((err) => console.error('could not get stretches by bodypart', err));
     }
 
     componentDidMount() {
@@ -40,7 +39,7 @@ class Stretches extends React.Component {
     }
 
     render() {
-      const makeStretchCards = this.state.stretches.map(stretch => (
+      const makeStretchCards = this.state.stretches.map((stretch) => (
       <StretchCard
       key={stretch.id}
       stretch={stretch}
@@ -50,7 +49,8 @@ class Stretches extends React.Component {
 
       return (
       <div className="Stretches col">
-      <h1>Stretches</h1>
+      <h1 id="stretchesHeader">Stretches</h1>
+      <h5 id="disclaimer">Note: Many stretches target multiple parts of the body. Expirement around!</h5>
       {this.props.location.search.length ? (<button className="btn btn-primary" onClick={() => { this.props.history.push('/stretches'); this.getStretches(); }}>View All Stretches</button>) : ''}
       <div className="d-flex flex-wrap">
        {makeStretchCards}
