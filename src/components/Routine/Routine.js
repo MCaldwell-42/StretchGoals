@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import {
   Button, Modal, ModalHeader, ModalBody, ModalFooter,
 } from 'reactstrap';
-import PropTypes from 'prop-types';
 import routineData from '../../helpers/data/routineData';
 import stretchShape from '../../helpers/propz/stretchShape';
 import routineStretchData from '../../helpers/data/routineStretchData';

@@ -9,6 +9,7 @@ class Single extends React.Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     const stretchId = this.props.match.params.id;
     stretchData.getSingleStretch(stretchId)
       .then((stretchPromise) => this.setState({ stretch: stretchPromise.data }))
