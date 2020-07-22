@@ -194,5 +194,145 @@
       "bodyPartId": "bodypart21",
       "duration": "3",
       "videoUrl": "https://www.youtube.com/embed/xOu7yImodGg"
+    },
+    "stretch29": {
+      "name": "Mountain Pose",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart22",
+      "duration": "2",
+      "videoUrl": "https://www.youtube.com/embed/2HTvZp5rPrg"
+    },
+    "stretch30": {
+      "name": "Triangle Pose",
+      "difficulty": "hard",
+      "bodyPartId": "bodypart21",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/sZeBVPpbYtI"
+    },
+    "stretch31": {
+      "name": "Warrior 2",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart23",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/xOu7yImodGg"
+    },
+    "stretch32": {
+      "name": "Extended Side Angle Pose",
+      "difficulty": "medium",
+      "bodyPartId": "bodypart2",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/CPbp3o6jD7s"
+    },
+    "stretch33": {
+      "name": "Warrior 1",
+      "difficulty": "medium",
+      "bodyPartId": "bodypart23",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/ptQL97qvL9E"
+    },
+    "stretch34": {
+      "name": "Half Moon Pose",
+      "difficulty": "advanced",
+      "bodyPartId": "bodypart21",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/haRAb8sxnbo"
+    },
+    "stretch35": {
+      "name": "Intense Side Stretch Pose",
+      "difficulty": "hard",
+      "bodyPartId": "bodypart1",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/_m19RdGhsEc"
+    },
+    "stretch36": {
+      "name": "Wide Leg Forward Bend",
+      "difficulty": "medium",
+      "bodyPartId": "bodypart21",
+      "duration": "2",
+      "videoUrl": "https://www.youtube.com/embed/8FRBqE5TsVk"
+    },
+    "stretch37": {
+      "name": "Gate Latch Pose",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart14",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/c2BPTaClsKM"
+    },
+    "stretch38": {
+      "name": "Big Toe Pose",
+      "difficulty": "medium",
+      "bodyPartId": "bodypart1",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/aYIfSGGE85I"
+    },
+    "stretch39": {
+      "name": "Downward Facing Dog",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart1",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/ETSIv8WetjI"
+    },
+    "stretch40": {
+      "name": "Chair Pose",
+      "difficulty": "medium",
+      "bodyPartId": "bodypart23",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/Kp7XJkG9ubc"
+    },
+    "stretch41": {
+      "name": "Staff Pose",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart22",
+      "duration": "2",
+      "videoUrl": "https://www.youtube.com/embed/g9zt9Vx6WBo"
+    },
+    "stretch42": {
+      "name": "Cow Face Pose (arms only)",
+      "difficulty": "medium",
+      "bodyPartId": "bodypart5",
+      "duration": "2",
+      "videoUrl": "https://www.youtube.com/embed/cDEQWYgq4tU"
+    },
+    "stretch43": {
+      "name": "Perfect Pose",
+      "difficulty": "advanced",
+      "bodyPartId": "bodypart21",
+      "duration": "5",
+      "videoUrl": "https://www.youtube.com/embed/Kpo9voJfwlQ"
+    },
+    "stretch44": {
+      "name": "Hero Pose",
+      "difficulty": "medium",
+      "bodyPartId": "bodypart23",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/BeWH3v6m3ms"
+    },
+    "stretch45": {
+      "name": "Seated Mountain Pose",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart22",
+      "duration": "3",
+      "videoUrl": "https://www.youtube.com/embed/FG8vCHratIg?start=11"
+    },
+    "stretch46": {
+      "name": "One Legged Forward Fold",
+      "difficulty": "easy",
+      "bodyPartId": "bodypart1",
+      "duration": "2",
+      "videoUrl": "https://www.youtube.com/embed/456n0tti4lI"
+    },
+    "stretch47": {
+      "name": "Marichi's Pose (twist only)",
+      "difficulty": "medium",
+      "bodyPartId": "bodypart2",
+      "duration": "2",
+      "videoUrl": "https://www.youtube.com/embed/C-tUq8xZPQ8"
+    },
+    "stretch48": {
+      "name": "Bridge Pose",
+      "difficulty": "medium",
+      "bodyPartId": "bodypart2",
+      "duration": "1",
+      "videoUrl": "https://www.youtube.com/embed/6HYNo1YQsUk"
     }
     }

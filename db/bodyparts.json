@@ -58,5 +58,11 @@
     },
     "bodypart21": {
       "name": "groin"
+    },
+    "bodypart22": {
+      "name": "spine"
+    },
+    "bodypart23": {
+      "name": "legs"
     }
   }
