@@ -9,7 +9,6 @@ import routineStretchData from '../../helpers/data/routineStretchData';
 import stretchShape from '../../helpers/propz/stretchShape';
 import './StretchCard.scss';
 
-
 class StretchCard extends React.Component {
   static propTypes = {
     stretch: stretchShape.stretchShape,
@@ -40,13 +39,13 @@ class StretchCard extends React.Component {
     };
     routineStretchData.addRoutineStretch(newRoutineStretch)
       .then(() => this.state.dropdownOpen)
-      .catch(err => console.error('couldnt add stretch', err));
+      .catch((err) => console.error('couldnt add stretch', err));
   }
 
   render() {
     const { stretch, routines } = this.props;
 
-    const routineChoices = routines.map(routine => (
+    const routineChoices = routines.map((routine) => (
       <RoutineOption key={routine.id} routineOption={routine} addMe={this.addMe}/>
     ));
 
