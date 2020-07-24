@@ -21,7 +21,6 @@ class Home extends React.Component {
 
   componentDidMount() {
     this.getBodyParts();
-    console.error(this.bodyparts);
   }
 
   toggle = () => {
@@ -31,7 +30,6 @@ class Home extends React.Component {
   }
 
   filterStretches = (bodyPartId) => {
-    console.error(bodyPartId);
     this.props.history.push(`/stretches?bodypartId=${bodyPartId}`);
   }
 

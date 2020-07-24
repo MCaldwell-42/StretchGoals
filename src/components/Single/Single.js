@@ -13,9 +13,15 @@ import routineStretchData from '../../helpers/data/routineStretchData';
 import 'firebase/auth';
 
 class Single extends React.Component {
-  state = {
-    stretch: {},
-    routines: [],
+  constructor(props) {
+    super(props);
+    this.state = {
+      stretch: {},
+      routines: [],
+      dropdownOpen: false,
+    };
+
+    this.toggle = this.toggle.bind(this);
   }
 
   static propTypes = {
@@ -26,8 +32,7 @@ class Single extends React.Component {
     const { uid } = firebase.auth().currentUser;
     routineData.getRoutines(uid).then((routines) => this.setState({ routines }))
       .catch((err) => console.error('could not get routines', err));
-
-    console.error(routineData);
+    console.error(this.state.routines);
   }
 
   componentDidMount() {
@@ -37,15 +42,6 @@ class Single extends React.Component {
       .then((stretchPromise) => this.setState({ stretch: stretchPromise.data }))
       .catch((err) => console.error('unable to get the stretch', err));
     this.getRoutines();
-  }
-
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      dropdownOpen: false,
-    };
   }
 
   toggle() {
@@ -66,9 +62,9 @@ class Single extends React.Component {
   }
 
   render() {
-    const { stretch, routines } = this.state;
+    const { stretch } = this.state;
 
-    const routineChoices = routines.map((routine) => (
+    const routineChoices = this.state.routines.map((routine) => (
       <RoutineOption key={routine.id} routineOption={routine} addMe={this.addMe}/>
     ));
 
